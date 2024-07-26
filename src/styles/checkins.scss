@@ -1,0 +1,285 @@
+﻿
+.c013, .Modal-modal-0-1-3 {
+    max-width: 905px !important;
+
+    @media screen and (max-width:900px) {
+        max-height: 500px !important;
+        overflow-y: auto;
+    }
+
+    .raw-data {
+        @media screen and (min-width:900px) {
+            white-space: pre;
+        }
+
+        @media screen and (max-width:900px) {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+            white-space: pre-line;
+        }
+    }
+
+    select, input[type="text"], input[type="number"] {
+        width: 315px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    select, input[type="text"], label, input[type="number"] {
+        font-size: 14px;
+    }
+
+    .select-disabled {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Chrome */
+        -webkit-appearance: none;
+    }
+    /* For IE10 */
+    select::-ms-expand {
+        display: none;
+    }
+
+    .label-input {
+        display: flex;
+
+        @media screen and (max-width:900px) {
+            flex-direction: column;
+        }
+    }
+}
+
+    .checkins-details {
+
+        @media screen and (max-width:900px) {
+            p {
+                margin: 0 0 5px !important;
+                font-size: 13px;
+            }
+        }
+    }
+
+.checkins-data-table {
+
+    .data-table-body {
+        margin-top: 0 !important;
+    }
+
+    @media screen and (min-width:900px) {
+        .data-table-header {
+            position: relative !important;
+            width: auto !important;
+        }
+
+        select {
+            padding: 5px 5px;
+        }
+
+        .data-table-cell {
+            justify-content: center;
+            width: 100% !important;
+        }
+    }
+
+    .tab-upper {
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .right {
+            margin: auto 0;
+            display: flex;
+
+            @media screen and (max-width:900px) {
+                justify-content: center;
+            }
+        }
+
+        .left {
+            margin: auto 0;
+            display: flex;
+
+            @media screen and (min-width:900px) {
+                button {
+                    margin-left: 15px;
+                }
+                
+                select, button {
+                    height: 34px;
+                }
+            }
+
+            @media screen and (max-width:900px) {
+                flex-direction: column;
+
+                select {
+                    padding: 5px !important;
+                }
+
+                button {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+
+
+
+        @media screen and (max-width:900px) {
+            flex-direction: column;
+        }
+    }
+
+    .tab-bottom {
+        text-align: right;
+        padding: 10px;
+    }
+
+    .modal-popup p label {
+        width: 150px !important;
+    }
+}
+
+    .checkins-data-table-row {
+        /*@media(orientation:landscape)*/
+        @media screen and (min-width:899px) {
+            padding: .7vh 0 !important;
+            font-size: 11px !important;
+
+            select, input {
+                padding: 5px 10px;
+            }
+
+            .data-table-cell:nth-child(1) {
+                flex-grow: 1.5;
+                flex-shrink: 1.5;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(2) {
+                flex-grow: 1.3;
+                flex-shrink: 1.3;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(3) {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(4) {
+                flex-grow: .8;
+                flex-shrink: .8;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(5) {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(6) {
+                flex-grow: .8;
+                flex-shrink: .8;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(7) {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(8) {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(9) {
+                flex-grow: .8;
+                flex-shrink: .8;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(10) {
+                flex-grow: .8;
+                flex-shrink: .8;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(11) {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+        }
+        /*@media(orientation:portrait)*/
+        @media screen and (max-width:900px) {
+            /*.data-table-cell:nth-child(3) {
+
+
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+
+                    & > div {
+                        margin-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }*/
+            .data-table-cell:nth-of-type(1):before {
+                content: "Timestamp";
+            }
+
+            .data-table-cell:nth-of-type(2):before {
+                content: "Firmware Ver";
+            }
+
+            .data-table-cell:nth-of-type(3):before {
+                content: "Flags";
+            }
+
+            .data-table-cell:nth-of-type(4):before {
+                content: "Reboot";
+            }
+
+            .data-table-cell:nth-of-type(5):before {
+                content: "RSSI";
+            }
+
+            .data-table-cell:nth-of-type(6):before {
+                content: "Roaming";
+            }
+
+            .data-table-cell:nth-of-type(7):before {
+                content: "Trouble";
+            }
+
+            .data-table-cell:nth-of-type(8):before {
+                content: "Diagnostics";
+            }
+
+            .data-table-cell:nth-of-type(9):before {
+                content: "PGM Status";
+            }
+
+            .data-table-cell:nth-of-type(10):before {
+                content: "Path";
+            }
+
+            .data-table-cell:nth-of-type(11):before {
+                content: "";
+            }
+        }
+    }

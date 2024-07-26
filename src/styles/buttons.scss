@@ -1,0 +1,94 @@
+﻿@import 'colors';
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active:focus {
+    outline: none;
+}
+
+grid-button {
+    font-size: inherit;
+    padding: 1px 3px;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.grid-reset-button {
+    //background-image: url("../img/Reset.png");
+   // background-color: aquamarine;
+    width: 35px;
+    height: 35px;
+    padding:0;
+    margin:0;
+    border-width:0;
+}
+
+
+.grid-save-button {
+    //color: blue;
+    @extend grid-button;
+}
+
+
+
+.grid-remove-button {
+    //color: white;
+    @extend grid-button;
+}
+
+.footer-button {
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 2vh;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 190px;
+
+    @media(orientation:portrait) and (max-width: 900px) {
+        flex-basis: 100px;
+    }
+
+    @media(orientation:landscape) and (max-width: 900px) {
+        flex-basis: 130px;
+        font-size: 3vh;
+        padding: 3px 15px !important;
+    }
+}
+
+.icon-button {
+    height: 36px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    margin: auto 0;
+    cursor: pointer;
+
+    @media screen and (max-width: 900px) {
+        height: 33px;
+    }
+}
+
+.icon-button-borderless {
+    height: 25px;
+    /*padding: 8px;*/    
+    margin: auto 0;
+    cursor: pointer;
+}
+
+/*  Its Only for IE      */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @media screen and (min-width: 900px) {
+        .btn-group-justified {
+            /*width: calc(250px + 100vw - 1030px) !important;*/
+            max-width: 1140px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .btn-group-justified {
+            width: 97vw;
+        }
+    }
+}
+

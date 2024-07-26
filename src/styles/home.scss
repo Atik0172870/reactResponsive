@@ -1,0 +1,170 @@
+﻿@import 'colors';
+
+.home {
+    .home-panel-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .user-data-table-row:nth-child(even) {
+        background: #e6eaf8;
+    }
+
+    .user-data-table-row:hover {
+        background: #e8e4e5;
+    }
+
+
+
+    .user-table {
+        .data-table-header>div {
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+
+        .data-table-header>div>* {
+            width: 80%;
+            text-align: left !important;
+        }
+    }
+
+    .user-data-table-row {
+
+        /*@media(orientation:landscape)*/
+        @media screen and (min-width:899px) {
+            padding: 1vh 0 !important;
+
+            .data-table-cell {
+                justify-content: flex-start !important;
+                padding-left: 10px !important;
+            }
+
+
+
+            input,
+            button,
+            select,
+            textarea {
+                font-family: inherit;
+                font-size: inherit;
+                line-height: 125;
+            }
+
+            .data-table-row:hover {
+                //background-color: #ffff99;
+            }
+
+            .data-table-cell:nth-child(1) {
+                flex-grow: 1.5;
+                flex-shrink: 1.5;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(2) {
+                flex-grow: 1.5;
+                flex-shrink: 1.5;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(3) {
+                flex-grow: .5;
+                flex-shrink: .5;
+                flex-basis: 0;
+            }
+
+            .data-table-cell:nth-child(4) {
+                flex-grow: .5;
+                flex-shrink: .5;
+                flex-basis: 0;
+            }
+        }
+
+        /*@media(orientation:portrait)*/
+        @media screen and (max-width:900px) {
+
+            .data-table-cell:nth-of-type(1):before {
+                content: "Name";
+            }
+
+            .data-table-cell:nth-of-type(2):before {
+                content: "Email";
+            }
+
+            .data-table-cell:nth-of-type(3):before {
+                content: "Details";
+            }
+
+            .data-table-cell:nth-of-type(4):before {
+                content: "Delete";
+            }
+        }
+    }
+}
+
+.add-user {
+    .labelTextbox-group {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        label {
+            display: flex;
+            width: 160px;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            text-align: left;
+        }
+    }
+
+    .add-user-input {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        //align-items: center;
+        // justify-content: center;
+        .input-group {
+
+            .input-group-addon {
+                background-color: white !important;
+                border: 1px solid #ccc !important;
+                width: 10%;
+                text-align: left;
+            }
+
+            .form-control {
+                background-color: white !important;
+                border: 1px solid #ccc !important;
+                border-left: none !important;
+                width: 40%;
+
+            }
+        }
+    }
+
+    .chk-btn-panel {
+        width: 46%;
+    }
+
+    .chk-btn {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .partition-ddl {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-right: 1.5rem;
+    }
+}
+

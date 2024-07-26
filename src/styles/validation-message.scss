@@ -1,0 +1,107 @@
+﻿.validation-div {
+
+    @media screen and (min-width: 900px) {
+        .data-table-body {
+            margin-top: 0px !important;
+            overflow-y: auto !important;
+            max-height: 400px;
+            border: 1px solid #CDCDCD;
+        }
+
+        .filter {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .data-table-body {
+            overflow-y: auto !important;
+            max-height: 300px;
+            border: 1px solid #CDCDCD;
+        }
+
+        .filter {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            label {
+                width: 120px;
+                text-align: left;
+            }
+
+            select {
+                width: 200px;
+            }
+        }
+    }
+
+
+
+    .error {
+        color: red;
+    }
+
+    .warning {
+        color: #337ab7;
+    }
+    /*select {
+        width: auto;
+    }*/
+    .validation-data-table-row {
+        /*@media(orientation:landscape)*/
+        @media screen and (min-width: 900px) {
+            .data-table-row .data-table-cell {
+                /*justify-content: flex-start;*/
+                display: table !important;
+                text-align: left;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+
+            select, input {
+                padding: 5px 10px;
+            }
+
+            .data-table-cell:nth-child(1) {
+                flex-grow: .5;
+                flex-shrink: .5;
+                flex-basis: 0;
+                text-align: center;
+                justify-content: center !important;
+            }
+
+            .data-table-cell:nth-child(2) {
+                flex-grow: 5;
+                flex-shrink: 5;
+                flex-basis: 0;
+                text-align: left;
+                justify-content: flex-start !important;
+            }
+        }
+        /*@media(orientation:portrait)*/
+        @media screen and (max-width:900px) {
+
+            .data-table-cell:nth-of-type(1):before {
+                content: "SL #";
+                text-align: left;
+            }
+
+            .data-table-cell:nth-of-type(2):before {
+                content: "Message";
+                text-align: left;
+            }
+
+            .data-table-cell:nth-of-type(2) {
+                text-align: left;
+            }
+        }
+    }
+
+    .validation-data-table-row:hover {
+        background: #faf06a;
+    }
+}

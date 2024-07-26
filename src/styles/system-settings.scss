@@ -1,0 +1,109 @@
+﻿.system-settings {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    color: #fff;
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 1024px;
+        //background-color: aqua;
+        & > * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vh;
+            margin: 2vw;
+            min-height: 8vh;
+
+            @media(max-width: 800px) {
+                padding: 0;
+                margin-bottom: 2vw;
+                font-size: 4vh;
+                min-height: 10vh;
+                width: 35vw;
+            }
+
+            @media(orientation:portrait) {
+                font-size: 4vw;
+                /*margin: 1vh;*/
+                margin-bottom: 2vw;
+                min-height: 8vh;
+                white-space: normal;
+                /*width: 50vw;*/
+            }
+
+            margin-top: 0;
+            //padding: 1.5vw;
+            font-weight: bold;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 35%;
+
+            & > span:last-child {
+                font-size: 2vh;
+
+                @media(max-width: 800px) {
+                    font-size: 3vh;
+                }
+
+                @media(orientation:portrait) {
+                    font-size: 3vw;
+                    /*width: 50vw;*/
+                }
+            }
+        }
+
+        /*& > :nth-child(2n) {
+            margin-left: 0;
+        }*/
+        /*& > :last-child {
+            flex-grow: 0;
+            margin-bottom: 0;
+        }*/
+    }
+
+    .end-user {
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 1024px;
+        //background-color: aqua;
+        & > * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vh;
+            margin-bottom: 2vw;
+            min-height: 8vh;
+            width: 20vw;
+            margin-left: 0;
+
+            @media(max-width: 800px) {
+                padding: 0;
+                margin-bottom: 2vw;
+                font-size: 4vh;
+                min-height: 10vh;
+                width: 35vw;
+            }
+
+            @media(orientation:portrait) {
+                font-size: 4vw;
+                /*margin: 1vh;*/
+                margin-bottom: 2vw;
+                min-height: 8vh;
+                width: 50vw;
+            }
+        }
+    }
+}

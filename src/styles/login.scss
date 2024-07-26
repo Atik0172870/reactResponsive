@@ -1,0 +1,117 @@
+﻿@import './colors';
+@import './dimensions';
+@import './font-faces';
+
+$bypass-container-padding: 10px 25px;
+
+.login {
+    //background-color: yellow;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+
+        @media(orientation:portrait) and (max-width:$width_899) {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+        }
+
+        @media(orientation:portrait) and (min-width:$width_900) {
+            width: 450px;
+        }
+
+        @media(orientation:landscape) {
+            width: 450px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+
+        & > img {
+            align-self: center;
+            margin-bottom: 13px;
+            height: 70px;
+        }
+
+        .forgot {
+            color: $valencia;
+            align-self: flex-start;
+            font-size: 12px;
+        }
+
+        .btn {
+            align-self: center;
+            min-width: 170px;
+            //margin: 5px 0 10px 0;
+        }
+
+        & > .links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            & > * {
+                color: $green;
+            }
+
+            & > :first-child {
+                margin-right: 5%;
+            }
+        }
+
+        & > .icons {
+            //background-color: rebeccapurple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+
+
+            & > :first-child {
+                color: #a4c439;
+            }
+
+            & > :nth-child(2) {
+                margin: 0 35px;
+                color: #abb1b8;
+            }
+
+            & > :last-child {
+                color: #fc0c0d;
+                font-size: 20px;
+            }
+        }
+
+        @media(orientation:portrait) {
+            & > img {
+                margin-bottom: 30px;
+            }
+
+            & > .links {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media(min-width:$width_899) {
+            background-color: $light-gray;
+            border: 1px solid $dark-gray;
+            border-radius: 5px;
+            padding: 30px;
+
+            & > img {
+                height: 90px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .link {
+            float: right;
+        }
+    }
+}

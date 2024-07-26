@@ -1,0 +1,83 @@
+﻿@import './colors';
+@import './dimensions';
+@import './font-faces';
+
+input[type="text"], input[type="number"] {
+    text-align: center;
+    border-radius: 3px;
+    background-color: #E6E6E6;
+    border: 2px solid $border-color;
+}
+
+input[type="text"]:read-only, input[type="number"]::read-only {
+    background-color: #C6C6C6;
+}
+
+input[type="password"] {
+    border-radius: 3px;
+    background-color: #E6E6E6;
+    border: 2px solid $border-color;
+}
+
+textarea {
+    text-align: center;
+    background-color: #E6E6E6;
+    border: 2px solid $border-color;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    width: 5vh;
+    height: 5vh;
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0;
+    color: $default-color !important;
+    background-color: #E6E6E6;
+    border: 2px solid $border-color;
+    border-radius: 3px;
+    cursor: pointer;
+    /*-webkit-appearance: none;*/
+    -moz-transform: scale(1.75);
+    /*outline: 2px solid $default-color;*/
+    /*-moz-appearance: none;*/
+}
+
+input[type="checkbox"]:hover {
+    width: 5vh;
+    height: 5vh;
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0;
+    color: $default-color !important;
+    background-color: #E6E6E6 !important;
+    border: 2px solid $border-color !important;
+    border-radius: 3px;
+    cursor: pointer;
+    -moz-transform: scale(1.75);
+    /*outline: 1px solid $default-color;*/
+    /*-moz-appearance: none;*/
+}
+
+select {
+    //height: 28px;
+    background-color: #E6E6E6;
+    border: 2px solid $border-color;
+    border-radius: 3px;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 5vh !important;
+    height: 5vh;
+    max-width: 25px;
+    max-height: 25px;
+    -moz-transform: scale(1.75);
+    cursor: pointer;
+    /*-moz-appearance: none;*/
+}
+
+input[type="text"].error, textarea.error {
+    border-color: red;
+}

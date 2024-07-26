@@ -1,0 +1,30 @@
+/*@import './normalize/_normalize.scss';*/
+@import './bootstrap/bootstrap.scss';
+@import './toastr/animate.min';
+@import './toastr/toastr.min';
+@import './picky/picky';
+
+
+@import './dimensions';
+@import './colors';
+@import './font-faces';
+@import './root';
+@import './header-footer';
+@import './controls';
+@import './page';
+@import './login';
+@import './home';
+@import './test';
+@import './data-table';
+@import './progress-modal';
+@import './alert-modal';
+@import './system-settings';
+@import './buttons';
+@import './busy-modal';
+@import './sweetalert/sweetalert';
+@import './react-responsive-modal/react-responsive-modal';
+@import './react-datepicker/react-datepicker.scss';
+@import '../common/SmallLoader/SmallLoader.scss';
+@import '../styles/common.scss';
+
+

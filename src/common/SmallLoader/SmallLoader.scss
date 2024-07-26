@@ -1,0 +1,52 @@
+.loader-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0rem;
+    z-index: 1000;
+    position: relative;
+    justify-content: center;
+    .custom-loader {
+
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .loading-text {
+        //text-align: justify;
+        padding-left: 0.5rem;
+        //line-height: 2.5rem;
+        //font-weight: bold;
+        color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 760px),
+    (max-width: 500px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+        padding-top: 0rem;
+    }
+
+}

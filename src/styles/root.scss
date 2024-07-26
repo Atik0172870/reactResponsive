@@ -1,0 +1,33 @@
+﻿@import 'dimensions';
+@import 'font-faces';
+@import 'colors';
+
+html {
+    height: 100%;
+    display: flex;
+}
+
+body {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+    color: $default-color;
+    font-size: $default-font-size;
+    font-family: $default-font;
+}
+
+#root {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+}
+
+
+.devTools-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+}
